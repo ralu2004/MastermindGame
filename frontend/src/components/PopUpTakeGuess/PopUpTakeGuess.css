@@ -1,0 +1,92 @@
+.popUpStart {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 400px;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 4px 10px rgba(192, 192, 192, 0.7);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+    transition: width 0.3s ease, top 0.3s ease; 
+}
+
+.buttonTake,
+.buttonBack {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #C0C0C0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: padding 0.3s ease, font-size 0.3s ease;
+}
+
+.buttonTake {
+    background-color: #556B2F;
+}
+
+.buttonBack {
+    background-color: #071c85;
+}
+
+.hazyBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.digitContainer {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: black;
+    color: #C0C0C0;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .popUpStart {
+        width: 80%; 
+        top: 25%; 
+    }
+
+    .buttonTake,
+    .buttonBack {
+        font-size: 14px;
+        padding: 8px 16px; 
+    }
+
+    .digitContainer {
+        width: 35px; 
+        height: 35px; 
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .popUpStart {
+        width: 90%; 
+        top: 20%; 
+    }
+
+    .buttonTake,
+    .buttonBack {
+        font-size: 12px; 
+        padding: 6px 12px; 
+    }
+
+    .digitContainer {
+        width: 30px; 
+        height: 30px; 
+        font-size: 14px; 
+    }
+}

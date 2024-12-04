@@ -1,0 +1,13 @@
+.popUpCounter{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 400px;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 4px 10px rgba(255, 254, 254, 0.7);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}

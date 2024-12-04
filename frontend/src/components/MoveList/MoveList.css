@@ -1,0 +1,79 @@
+.moveListContainer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    color: #C0C0C0;
+    box-shadow: 0 4px 10px rgba(139, 0, 0, 0.7);
+    border-radius: 10px;
+    z-index: 500;
+    overflow-y: auto;
+  }
+  
+  .container {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px rgba(139, 0, 0, 0.7);
+    border-radius: 10px;
+    z-index: 500;
+  }
+  
+  .digitContainer2 {
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: black;
+    color: #C0C0C0;
+  }
+  
+  @media (max-width: 576px) {
+    .moveListContainer {
+      padding: 10px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .digitContainer2 {
+      font-size: 16px;
+      height: 18px;
+      width: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .moveListContainer {
+      width: 90%;
+    }
+  
+    .container {
+      width: 90%;
+    }
+  
+    .digitContainer2 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .moveListContainer {
+      max-width: 1200px;
+    }
+  
+    .container {
+      max-width: 1200px;
+    }
+  }
+  
